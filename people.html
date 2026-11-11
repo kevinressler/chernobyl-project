@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chain of Command &middot; Chernobyl Final Project</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&family=Oswald:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Chernobyl Final Project</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="people.html" aria-current="page">Chain of Command</a>
+      <!-- MAP HIDDEN: uncomment to show the Radiation Map link again
+      <a href="map.html">Radiation Map</a>
+      -->
+    </nav>
+  </header>
+
+  <section class="page-intro">
+    <p class="kicker">Exhibit 01</p>
+    <h1>Chain of Command</h1>
+  </section>
+
+  <div class="tree-scroll" id="tree-scroll">
+    <div class="tree-sizer" id="tree-sizer">
+      <div class="tree-canvas" id="tree-canvas">
+        <svg id="tree-lines" aria-hidden="true"></svg>
+      </div>
+    </div>
+  </div>
+
+  <p class="tree-note">
+    &dagger; died as a result of the disaster.
+  </p>
+
+  <aside class="detail" id="detail" aria-live="polite" aria-hidden="true">
+    <button class="close" id="detail-close" aria-label="Close">&times;</button>
+    <span class="cat-tag" id="d-cat"></span>
+    <h2 id="d-name"></h2>
+    <p class="d-role" id="d-role"></p>
+    <p class="d-life" id="d-life"></p>
+    <figure class="d-photo">
+      <div class="ph" id="d-real"></div>
+    </figure>
+    <p class="d-bio" id="d-bio"></p>
+    <div class="d-chain" id="d-chain"></div>
+  </aside>
+
+  <script src="js/people.js"></script>
+</body>
+</html>

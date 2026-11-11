@@ -3,10 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Chernobyl Memory Museum</title>
+  <title>Chernobyl Final Project</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&family=Oswald:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1>Chernobyl Memory Museum</h1>
-  <p>Coming soon.</p>
+  <header class="site-header">
+    <a class="brand" href="index.html">Chernobyl Final Project</a>
+    <nav>
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="people.html">Chain of Command</a>
+      <!-- MAP HIDDEN: uncomment to show the Radiation Map link again
+      <a href="map.html">Radiation Map</a>
+      -->
+    </nav>
+  </header>
+
+  <main class="landing">
+    <p class="stamp">April 26, 1986 &middot; 01:23 &middot; Reactor No. 4</p>
+    <h1>Welcome to the Zone</h1>
+
+    <section class="exhibits" aria-label="Exhibits">
+      <a class="exhibit" href="people.html">
+        <span class="num">EXHIBIT 01</span>
+        <h2>Chain of Command</h2>
+        <p>Hierarchical leadership graph</p>
+      </a>
+      <!-- MAP HIDDEN: uncomment this card to show the Radiation Map again.
+      <a class="exhibit" href="map.html">
+        <span class="num">EXHIBIT 02</span>
+        <h2>Radiation Map</h2>
+        <p>Follow the fallout from the plant's early days, across Europe in 1986, to the zone as it stands today.</p>
+      </a>
+      -->
+    </section>
+  </main>
 </body>
 </html>

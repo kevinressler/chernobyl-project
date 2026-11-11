@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Radiation Map &middot; Chernobyl Final Project</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&family=Oswald:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Chernobyl Final Project</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="people.html">Chain of Command</a>
+      <a href="map.html" aria-current="page">Radiation Map</a>
+    </nav>
+  </header>
+
+  <section class="page-intro">
+    <p class="kicker">Exhibit 02</p>
+    <h1>Radiation Map</h1>
+    <p>
+      How the fallout from Reactor No. 4 spread, from the plant's early days, across Europe in
+      the spring of 1986, to the zone as it stands today. Use the timeline or press play.
+    </p>
+  </section>
+
+  <div class="map-wrap">
+    <div class="map-layout">
+      <div id="map" aria-label="Map of radiation spread"></div>
+      <article class="story" id="story" aria-live="polite"></article>
+    </div>
+
+    <div class="timeline">
+      <div class="tl-controls">
+        <button class="tl-btn" id="tl-prev" aria-label="Previous stage">&#8592;</button>
+        <button class="tl-btn tl-play" id="tl-play">Play</button>
+        <button class="tl-btn" id="tl-next" aria-label="Next stage">&#8594;</button>
+      </div>
+      <div class="tl-track">
+        <input type="range" id="tl-range" min="0" max="0" step="1" value="0" aria-label="Timeline stage">
+        <div class="tl-ticks" id="tl-ticks"></div>
+      </div>
+    </div>
+  </div>
+
+  <section class="map-notes">
+    <p>
+      <strong>About this map.</strong> Plume paths and contamination areas are simplified
+      illustrations based on published reconstructions, not measured data. Contamination is shown
+      as caesium-137 deposited on the ground (kBq/m²). It fades on the map as the caesium decays,
+      with a half-life of about 30 years. The timeline stops are events, not evenly spaced years.
+    </p>
+    <p class="sources">
+      Sources: UNSCEAR 2008 Report, Annex D (health effects of the Chernobyl accident) and its 2018
+      white paper on thyroid cancer; IAEA, <em>Chernobyl's Legacy</em> (Chernobyl Forum, 2006);
+      European Commission, <em>Atlas of Caesium Deposition on Europe after the Chernobyl
+      Accident</em> (1998); IAEA updates on Chornobyl (2022, 2025). Basemap &copy; Esri, HERE,
+      Garmin, &copy; OpenStreetMap contributors.
+    </p>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+  <script src="js/map.js"></script>
+</body>
+</html>
